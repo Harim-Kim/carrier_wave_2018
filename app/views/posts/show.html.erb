@@ -12,11 +12,15 @@
 
 <p>
   <strong>Image:</strong>
-  <% @post.image.each do |i| %>
-    <%= image_tag i, class:"post_image"%>
-  <% end %>
+  <!--여러 파일 보여줄 때-->
+  <!--<#% @post.image.each do |i| %>-->
+  <!--  <#%= image_tag i, class:"post_image"%>-->
+  <!--<#% end %>-->
+  <!--하나만-->
+  <!--<#%= image_tag @post.image %>-->
+  <%= @post.image.identifier %>
+  <a href="<%=@post.image.url%>">다운로드</a> 
 </p>
-<h1>51211441</h1>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

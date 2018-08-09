@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
-
+gem 'mini_magick'
+#sudo apt-get update
+#sudo apt-get install imagemagick
+#sudo apt-get install php5-imagick
+gem 'fog-aws'
 gem 'carrierwave', '~> 1.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'

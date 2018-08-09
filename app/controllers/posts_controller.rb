@@ -70,6 +70,6 @@ class PostsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def post_params
       # 파일 하나만 업로드 할때는 :image / 여러개를 업로드 할 때는 {image:[]}
-      params.require(:post).permit(:title, :content, {image: []})
+      params.require(:post).permit(:title, :content, :image)
     end
 end
